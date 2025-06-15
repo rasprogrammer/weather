@@ -5,23 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css">
   </head>
 <body>
 
-    <div class="container">
+    <div class="container-lg">
         <div class="row">
             <div class="col">
-                <h2 class="text-center m-3">Weather</h2>
+                <h2 class="text-center fw-bold m-3">Weather</h2>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search your location">
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <div class="input-group">
+                    <p class="fs-2">
+                        <i class="fa fa-map-marker fs-1" aria-hidden="true"></i> 
+                        Thana Weather Forecast 
+                        <span class="text-secondary">Maharashtra, India</span>
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col text-center">Weather</div>
-            <div class="col text-center">Information</div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-white text-center bg-dark p-3 py-4">
+                        <h5 class="text-white pb-2">Weather Outlook</h5>
+                        <div class="row">
+                            <div class="col-md-6 col-12 py-4">
+                                <img 
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyGTyKnZNSU_6q2hjsctclB331jj5xV3PGWg&s" 
+                                alt="Cloud"
+                                style="width: 100px; height: 100px;"
+                                >
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center" id="weather-details">
+                                <div>
+                                    <p>Wind: 11.2 kmph</p>
+                                    <p>Precip: 0.00 mm</p>
+                                    <p>Pressure: 998.0 mb</p>
+                                    <h3>27.3 °c</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="next-days-forecast">
+                            <div class="col">
+                                <p>Mon</p>
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <p>27.6 °c</p>
+                            </div>
+                            <div class="col">
+                                <p>Mon</p>
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <p>27.6 °c</p>
+                            </div>
+                            <div class="col">
+                                <p>Mon</p>
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <p>27.6 °c</p>
+                            </div>
+                            <div class="col">
+                                <p>Mon</p>
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <p>27.6 °c</p>
+                            </div>
+                            <div class="col">
+                                <p>Mon</p>
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <p>27.6 °c</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-left px-5 mt-2 information-box">
+                        <h3>Information</h3>
+                        <table id="information-details" >
+                            <tr>
+                                <td>Country:</td>
+                                <td><span>India</span></td>
+                            </tr>
+                            <tr>
+                                <td>Region:</td>
+                                <td><span>Maharashtra</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lat/Lon:</td>
+                                <td><span>19.2, 72.97</span></td>
+                            </tr>
+                            <tr>
+                                <td>Current time:</td>
+                                <td><span>11:12 am</span></td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone ID:</td>
+                                <td><span>Asia/Kolkata</span></td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone:</td>
+                                <td><span>(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sunrise:</td>
+                                <td><span>6:01 am</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sunset:</td>
+                                <td><span>7:18 pm</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
     <script src="script.js"></script>

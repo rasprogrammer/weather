@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
+
 <body>
 
     <div class="container-lg">
@@ -20,8 +22,8 @@
         <div class="row my-3">
             <div class="col">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search your location">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <input type="text" name="locaiton" class="form-control" placeholder="Search your location">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
                 </div>
             </div>
         </div>
@@ -30,9 +32,11 @@
             <div class="col">
                 <div class="input-group">
                     <p class="fs-2">
-                        <i class="fa fa-map-marker fs-1" aria-hidden="true"></i> 
-                        Thana Weather Forecast 
-                        <span class="text-secondary">Maharashtra, India</span>
+                        <i class="fa fa-map-marker fs-1" aria-hidden="true"></i>
+                        <span id="weather-location">
+                            Thana Weather Forecast
+                            <span class="text-secondary">Maharashtra, India</span>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -45,13 +49,11 @@
                         <h5 class="text-white pb-2">Weather Outlook</h5>
                         <div class="row">
                             <div class="col-md-6 col-12 py-4">
-                                <img 
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyGTyKnZNSU_6q2hjsctclB331jj5xV3PGWg&s" 
-                                alt="Cloud"
-                                style="width: 100px; height: 100px;"
-                                >
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyGTyKnZNSU_6q2hjsctclB331jj5xV3PGWg&s"
+                                    alt="Cloud" style="width: 100px; height: 100px;">
                             </div>
-                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center" id="weather-details">
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center"
+                                id="weather-details">
                                 <div>
                                     <p>Wind: 11.2 kmph</p>
                                     <p>Precip: 0.00 mm</p>
@@ -63,34 +65,39 @@
                         <div class="row" id="next-days-forecast">
                             <div class="col">
                                 <p>Mon</p>
-                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png"
+                                    alt="Cloud" style="width: 40px; height: 40px;" />
                                 <p>27.6 °c</p>
                             </div>
                             <div class="col">
                                 <p>Mon</p>
-                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png"
+                                    alt="Cloud" style="width: 40px; height: 40px;" />
                                 <p>27.6 °c</p>
                             </div>
                             <div class="col">
                                 <p>Mon</p>
-                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png"
+                                    alt="Cloud" style="width: 40px; height: 40px;" />
                                 <p>27.6 °c</p>
                             </div>
                             <div class="col">
                                 <p>Mon</p>
-                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png"
+                                    alt="Cloud" style="width: 40px; height: 40px;" />
                                 <p>27.6 °c</p>
                             </div>
                             <div class="col">
                                 <p>Mon</p>
-                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png" alt="Cloud" style="width: 40px; height: 40px;" />
+                                <img src="https://www.citypng.com/public/uploads/preview/hd-dark-blue-storage-host-clouds-icon-png-701751695039245vq72vasuze.png"
+                                    alt="Cloud" style="width: 40px; height: 40px;" />
                                 <p>27.6 °c</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 text-left px-5 mt-2 information-box">
                         <h3>Information</h3>
-                        <table id="information-details" >
+                        <table id="information-details">
                             <tr>
                                 <td>Country:</td>
                                 <td><span>India</span></td>
@@ -130,7 +137,9 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

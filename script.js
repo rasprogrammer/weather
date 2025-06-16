@@ -1,4 +1,5 @@
-const api = "http://api.weatherapi.com/v1/";
+// const api = "http://api.weatherapi.com/v1/";
+const api = "https://api.weatherapi.com/v1/"; // https for live
 
 let sendData = {
     key: "c2959057eb4240fc8cb41210251506",

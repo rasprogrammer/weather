@@ -17,7 +17,7 @@ async function currentWeather() {
         const json = await response.json();
         console.log('json > ', json);
         showLocation(json.location);
-        // showInformation(json.location);
+        showInformation(json.location);
         return json;
     } catch (error) {
         console.log(error.message);
